@@ -14,7 +14,7 @@ def bubbleSort(arr):
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
 for i in range(n):
-    arr.append(int(input(f"Nhap phan tu thu {i+1}: ")))
+    arr.append(int(input(f"Nhap phan tu thu {i + 1}: ")))
 
 system("cls")
 print(f"Truoc khi sort: {arr}\n")
