@@ -4,11 +4,8 @@ n = int(input("Nhap so phan tu: "))
 arr = []
 
 def insertionSort(arr):
-    count = 0
-
     for i in range(1, n):
-        count += 1
-        print(f"Vong lap {count}: {arr}")
+        print(f"Vong lap {i}: {arr}")
         key = arr[i]
         j = i - 1
         while j >= 0 and key < arr[j]:

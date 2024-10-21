@@ -4,11 +4,8 @@ n = int(input("Nhap so phan tu: "))
 arr = []
 
 def bubbleSort(arr):
-    count = 0
-
     for i in range(n):
-        count += 1
-        print(f"Vong lap {count}: {arr}")
+        print(f"Vong lap {i + 1}: {arr}")
         for j in range(0, n - i - 1):
             if arr[j] > arr[j + 1]:
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
