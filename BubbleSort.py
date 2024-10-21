@@ -9,9 +9,9 @@ def bubbleSort(arr):
     for i in range(n):
         count += 1
         print(f"Vong lap {count}: {arr}")
-        for j in range(i + 1, n):
-            if arr[i] > arr[j]:
-                arr[i], arr[j] = arr[j], arr[i]        
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
 for i in range(n):
     arr.append(int(input(f"Nhap phan tu thu {i+1}: ")))
